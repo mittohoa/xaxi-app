@@ -1,0 +1,172 @@
+/* XAXI — shared styles. Bảng màu lấy từ chính app (terracotta ấm). */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg: #EEEAE5;
+  --surface: #FFFFFF;
+  --surface-2: #F6F2EE;
+  --ink: #26221E;
+  --ink-2: #6E655E;
+  --primary: #A35A38;
+  --primary-deep: #7C3F25;
+  --accent-soft: #F2DDD0;
+  --green: #5B7553;
+  --border: rgba(0, 0, 0, 0.10);
+  --shadow: 0 10px 30px rgba(60, 35, 20, 0.10);
+  --radius: 18px;
+  --maxw: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--primary-deep); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+.narrow { max-width: 760px; }
+
+/* ---- Header ---- */
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(238, 234, 229, 0.86);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.site-header .container {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.brand { display: flex; align-items: baseline; gap: 8px; }
+.brand .mark {
+  font-weight: 900; font-size: 22px; letter-spacing: -0.04em; color: var(--primary);
+}
+.brand .sub { font-size: 13px; color: var(--ink-2); font-weight: 600; }
+.nav { display: flex; gap: 22px; align-items: center; }
+.nav a { color: var(--ink); font-weight: 600; font-size: 14px; }
+.nav a:hover { color: var(--primary); text-decoration: none; }
+
+/* ---- Hero ---- */
+.hero { padding: 72px 0 56px; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
+.eyebrow {
+  display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--primary-deep);
+  background: var(--accent-soft); padding: 5px 12px; border-radius: 999px;
+}
+.hero h1 {
+  font-size: clamp(34px, 5.2vw, 56px); line-height: 1.05; letter-spacing: -0.035em;
+  font-weight: 900; margin: 18px 0 14px;
+}
+.hero h1 .accent { color: var(--primary); }
+.hero p.lead { font-size: 19px; color: var(--ink-2); max-width: 30em; margin: 0 0 26px; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 700; font-size: 15px; padding: 13px 22px; border-radius: 14px;
+  border: 1px solid transparent; cursor: pointer;
+}
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-deep); text-decoration: none; }
+.btn-ghost { background: var(--surface); color: var(--ink); border-color: var(--border); }
+.btn-ghost:hover { border-color: var(--primary); text-decoration: none; }
+
+/* ---- Phone / card mock (CSS, không cần ảnh) ---- */
+.mock {
+  background: linear-gradient(150deg, var(--primary), var(--primary-deep));
+  border-radius: 26px; padding: 22px; box-shadow: var(--shadow); color: #fff;
+}
+.mock .mlabel { font-size: 12px; opacity: 0.85; }
+.mock .mbal { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin-top: 4px; }
+.mock .mcards { margin-top: 18px; display: grid; gap: 10px; }
+.mrow {
+  background: rgba(255,255,255,0.14); border-radius: 14px; padding: 11px 14px;
+  display: flex; justify-content: space-between; align-items: center; font-size: 14px;
+}
+.mrow .pos { color: #CFE6C7; font-weight: 700; }
+.mrow .neg { color: #F4C9BC; font-weight: 700; }
+
+/* ---- Sections ---- */
+section.block { padding: 56px 0; }
+.section-title { font-size: clamp(24px, 3.4vw, 34px); font-weight: 800; letter-spacing: -0.03em; margin: 0 0 8px; }
+.section-sub { color: var(--ink-2); margin: 0 0 34px; font-size: 17px; }
+
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 22px; box-shadow: var(--shadow);
+}
+.card .ico { font-size: 26px; }
+.card h3 { margin: 12px 0 6px; font-size: 17px; font-weight: 700; }
+.card p { margin: 0; color: var(--ink-2); font-size: 14.5px; }
+
+/* ---- Legal / support prose ---- */
+.page-head { padding: 48px 0 8px; }
+.page-head h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.03em; margin: 0 0 6px; }
+.page-head .updated { color: var(--ink-2); font-size: 14px; }
+.prose { padding: 12px 0 56px; }
+.prose h2 { font-size: 20px; font-weight: 700; margin: 34px 0 10px; letter-spacing: -0.01em; }
+.prose h3 { font-size: 16px; font-weight: 700; margin: 22px 0 6px; }
+.prose p, .prose li { color: #3a342f; font-size: 16px; }
+.prose ul { padding-left: 22px; }
+.prose li { margin: 6px 0; }
+.callout {
+  background: var(--surface-2); border: 1px solid var(--border); border-left: 4px solid var(--primary);
+  border-radius: 12px; padding: 14px 16px; margin: 18px 0; font-size: 15px;
+}
+details.faq {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 4px 18px; margin: 10px 0; box-shadow: var(--shadow);
+}
+details.faq summary {
+  cursor: pointer; font-weight: 700; padding: 14px 0; list-style: none; font-size: 16px;
+}
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after { content: '+'; float: right; color: var(--primary); font-weight: 800; }
+details.faq[open] summary::after { content: '–'; }
+details.faq p { margin: 0 0 14px; color: var(--ink-2); }
+
+/* ---- Footer ---- */
+.site-footer { border-top: 1px solid var(--border); padding: 30px 0; margin-top: 20px; }
+.site-footer .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.site-footer .flinks { display: flex; gap: 18px; flex-wrap: wrap; }
+.site-footer a { color: var(--ink-2); font-size: 14px; font-weight: 600; }
+.site-footer small { color: var(--ink-2); }
+
+/* ---- Responsive ---- */
+@media (max-width: 820px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .features { grid-template-columns: 1fr; }
+  .nav { gap: 14px; }
+  .nav a.hide-sm { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- Song ngữ / bilingual ---- */
+[data-lang="vi"] .en { display: none !important; }
+[data-lang="en"] .vi { display: none !important; }
+
+.langtoggle {
+  display: inline-flex; border: 1px solid var(--border); border-radius: 999px;
+  overflow: hidden; background: var(--surface); margin-left: 6px;
+}
+.langtoggle button {
+  font-family: inherit; font-weight: 700; font-size: 12.5px; letter-spacing: 0.02em;
+  padding: 6px 12px; border: 0; background: transparent; color: var(--ink-2); cursor: pointer;
+}
+.langtoggle button.active { background: var(--primary); color: #fff; }
+.langtoggle button:not(.active):hover { color: var(--primary); }

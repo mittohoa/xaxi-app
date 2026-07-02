@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi" data-lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>(function(){try{var s=localStorage.getItem('xaxi_lang');var l=(s==='vi'||s==='en')?s:((navigator.language||'vi').toLowerCase().indexOf('en')===0?'en':'vi');document.documentElement.setAttribute('data-lang',l);document.documentElement.setAttribute('lang',l);}catch(e){document.documentElement.setAttribute('data-lang','vi');}})();</script>
+<title>Hỗ trợ — XAXI</title>
+<meta name="description" content="Câu hỏi thường gặp và hỗ trợ cho ứng dụng XAXI. XAXI support &amp; FAQ." />
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
+</head>
+<body data-title-vi="Hỗ trợ — XAXI" data-title-en="Support — XAXI">
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand"><a href="index.html" style="text-decoration:none"><span class="mark">XAXI</span></a> <span class="sub">Xa Xỉ</span></div>
+    <nav class="nav">
+      <a href="index.html"><span class="vi">Trang chủ</span><span class="en">Home</span></a>
+      <a href="privacy.html" class="hide-sm"><span class="vi">Bảo mật</span><span class="en">Privacy</span></a>
+      <a href="terms.html"><span class="vi">Điều khoản</span><span class="en">Terms</span></a>
+      <span class="langtoggle"><button data-langbtn="vi">VI</button><button data-langbtn="en">EN</button></span>
+    </nav>
+  </div>
+</header>
+
+<main class="container narrow">
+  <div class="page-head">
+    <h1><span class="vi">Hỗ trợ</span><span class="en">Support</span></h1>
+    <div class="updated"><span class="vi">Câu hỏi thường gặp &amp; cách liên hệ</span><span class="en">FAQ &amp; how to contact us</span></div>
+  </div>
+
+  <div class="prose">
+    <div class="callout"><span class="vi">Cần trợ giúp nhanh? Gửi email tới <a href="mailto:hutech.apps@gmail.com">hutech.apps@gmail.com</a> — mô tả thiết bị, phiên bản app và các bước bạn đã làm.</span><span class="en">Need quick help? Email <a href="mailto:hutech.apps@gmail.com">hutech.apps@gmail.com</a> — include your device, app version and the steps you took.</span></div>
+
+    <h2><span class="vi">Bắt đầu</span><span class="en">Getting started</span></h2>
+    <details class="faq">
+      <summary><span class="vi">Tôi ghi một khoản chi như thế nào?</span><span class="en">How do I log a spend?</span></summary>
+      <p><span class="vi">Bấm nút “+”, nhập số tiền, chọn ví và danh mục. Để nhanh hơn, dùng ô <strong>nhập nhanh</strong> ở đầu form: gõ ví dụ “cà phê 45k hôm qua” và app sẽ tự điền số tiền, ngày và ghi chú.</span><span class="en">Tap “+”, enter the amount, pick a wallet and category. For speed, use the <strong>quick-add</strong> box at the top: type e.g. “coffee 45k yesterday” and the app fills in amount, date and note.</span></p>
+    </details>
+    <details class="faq">
+      <summary><span class="vi">Nhập bằng giọng nói và chụp hóa đơn dùng sao?</span><span class="en">How do voice entry and receipt scan work?</span></summary>
+      <p><span class="vi">Bấm biểu tượng micro để nói (tiếng Việt) — app chuyển lời nói thành nội dung khoản chi. Hoặc bấm “Quét hóa đơn” để chụp; app nhận dạng chữ ngay trên máy, và nếu bạn đã cấu hình AI thì sẽ bóc tách chính xác số tiền phải thanh toán. (Quét hóa đơn &amp; giọng nói có trên điện thoại.)</span><span class="en">Tap the mic to speak — the app turns speech into a transaction. Or tap “Scan receipt” to capture one; text is recognized on-device, and if AI is configured it extracts the exact amount due. (Receipt scan &amp; voice are available on phones.)</span></p>
+    </details>
+
+    <h2><span class="vi">Nhập dữ liệu</span><span class="en">Importing data</span></h2>
+    <details class="faq">
+      <summary><span class="vi">Làm sao nhập sao kê ngân hàng/ví (Excel, CSV)?</span><span class="en">How do I import a bank/e-wallet statement (Excel, CSV)?</span></summary>
+      <p><span class="vi">Vào mục nhập sao kê, chọn tệp <strong>.xlsx</strong> hoặc <strong>.csv</strong> và ví đích. Ở màn ánh xạ cột, app tự đoán cột ngày/số tiền/nội dung — bạn kiểm tra và sửa nếu cần. App tự phân loại danh mục, cảnh báo dòng trùng, và ghi nhớ cấu hình cho từng ngân hàng để lần sau nhanh hơn.</span><span class="en">Open statement import, choose an <strong>.xlsx</strong> or <strong>.csv</strong> file and the target wallet. On the column-mapping screen the app guesses the date/amount/description columns — review and adjust if needed. It auto-categorizes, flags duplicate rows, and remembers a per-bank preset for next time.</span></p>
+    </details>
+    <details class="faq">
+      <summary><span class="vi">Vì sao một số dòng bị báo “trùng”?</span><span class="en">Why are some rows flagged as “duplicate”?</span></summary>
+      <p><span class="vi">Khi một dòng có cùng ngày + số tiền + loại với giao dịch đã có, app cảnh báo để tránh nhập đôi. Bạn chọn <em>Thêm</em>, <em>Bỏ qua</em> hoặc <em>Cập nhật</em> cho từng dòng.</span><span class="en">When a row has the same date + amount + type as an existing transaction, the app warns you to avoid double entry. Choose <em>Add</em>, <em>Skip</em> or <em>Update</em> per row.</span></p>
+    </details>
+
+    <h2><span class="vi">Đa tiền tệ</span><span class="en">Multi-currency</span></h2>
+    <details class="faq">
+      <summary><span class="vi">Tôi dùng nhiều loại tiền tệ thì sao?</span><span class="en">What if I use multiple currencies?</span></summary>
+      <p><span class="vi">Mỗi ví có tiền tệ riêng; giao dịch hiển thị theo tiền của ví đó. Mọi <strong>tổng hợp</strong> (tổng số dư, báo cáo, ngân sách) sẽ quy về <strong>tiền tệ gốc</strong>. Vào <em>Khác → Tiền tệ &amp; tỷ giá</em> để chọn tiền gốc và nhập tỷ giá thủ công.</span><span class="en">Each wallet has its own currency; transactions show in that wallet’s currency. All <strong>totals</strong> (balance, reports, budgets) convert to your <strong>base currency</strong>. Go to <em>More → Currency &amp; rates</em> to set the base and enter rates manually.</span></p>
+    </details>
+
+    <h2><span class="vi">AI Coach &amp; đọc hóa đơn bằng AI</span><span class="en">AI Coach &amp; AI receipt reading</span></h2>
+    <details class="faq">
+      <summary><span class="vi">Cấu hình AI thế nào? Có tốn phí không?</span><span class="en">How do I set up AI? Is it free?</span></summary>
+      <p><span class="vi">Tính năng AI là tùy chọn và cần <strong>khóa API của bạn</strong>. Nhiều nhà cung cấp có gói miễn phí (ví dụ Groq, Google Gemini, OpenRouter). Vào phần cài đặt AI, dán địa chỉ máy chủ, tên mô hình và khóa API. Khi bật, app gửi nội dung cần thiết (ví dụ văn bản hóa đơn) tới nhà cung cấp đó để xử lý. Không bật thì không gửi gì.</span><span class="en">AI is optional and needs <strong>your own API key</strong>. Several providers have free tiers (e.g. Groq, Google Gemini, OpenRouter). In AI settings, paste the base URL, model name and API key. When enabled, the app sends the needed content (e.g. receipt text) to that provider. If not enabled, nothing is sent.</span></p>
+    </details>
+
+    <h2><span class="vi">Sao lưu &amp; đồng bộ</span><span class="en">Backup &amp; sync</span></h2>
+    <details class="faq">
+      <summary><span class="vi">Dữ liệu có đồng bộ giữa các thiết bị không?</span><span class="en">Does data sync across devices?</span></summary>
+      <p><span class="vi">Có. Dữ liệu lưu trên đám mây theo tài khoản của bạn; đăng nhập cùng tài khoản trên máy khác là thấy dữ liệu. Bạn cũng có thể <strong>sao lưu/khôi phục ra tệp</strong> trong mục Khác.</span><span class="en">Yes. Data is stored in the cloud under your account; sign in on another device to see it. You can also <strong>back up/restore to a file</strong> from the More tab.</span></p>
+    </details>
+    <details class="faq">
+      <summary><span class="vi">Mất mạng có dùng được không?</span><span class="en">Can I use it offline?</span></summary>
+      <p><span class="vi">Được. Bạn vẫn <strong>thêm/sửa/xóa</strong> và xem dữ liệu khi offline; thay đổi được lưu lại và <strong>tự đồng bộ</strong> khi có mạng hoặc khi mở lại app.</span><span class="en">Yes. You can still <strong>add/edit/delete</strong> and view data offline; changes are saved and <strong>sync automatically</strong> when you’re back online or reopen the app.</span></p>
+    </details>
+
+    <h2><span class="vi">Bảo mật</span><span class="en">Security</span></h2>
+    <details class="faq">
+      <summary><span class="vi">Khóa app và mã hóa ghi chú là gì?</span><span class="en">What are app lock and note encryption?</span></summary>
+      <p><span class="vi">Bạn có thể bật khóa bằng <strong>PIN, vân tay/khuôn mặt</strong> và chống chụp màn hình trong <em>Khác → Bảo mật &amp; khóa</em>. Bật <strong>mã hóa ghi chú</strong> để mã hóa ghi chú/tên người bán bằng mã bảo mật của bạn. Lưu ý: nếu quên mã bảo mật, phần ghi chú đã mã hóa không thể khôi phục.</span><span class="en">You can enable <strong>PIN, fingerprint/face</strong> lock and screenshot protection in <em>More → Security &amp; lock</em>. Turn on <strong>note encryption</strong> to encrypt notes/merchant names with your security code. Note: if you forget the code, encrypted notes can’t be recovered.</span></p>
+    </details>
+
+    <h2><span class="vi">Tài khoản</span><span class="en">Account</span></h2>
+    <details class="faq">
+      <summary><span class="vi">Làm sao xóa tài khoản và toàn bộ dữ liệu?</span><span class="en">How do I delete my account and all data?</span></summary>
+      <p><span class="vi">Trong app, bạn có thể xóa dữ liệu theo ví/sự kiện/thời gian hoặc “bắt đầu lại”. Để xóa <strong>toàn bộ tài khoản</strong>, gửi email từ địa chỉ đã đăng ký tới <a href="mailto:hutech.apps@gmail.com">hutech.apps@gmail.com</a> với tiêu đề “Xóa tài khoản”. Chúng tôi xử lý trong vòng 30 ngày.</span><span class="en">In the app you can delete data by wallet/event/date range, or “start over”. To delete your <strong>entire account</strong>, email us from your registered address at <a href="mailto:hutech.apps@gmail.com">hutech.apps@gmail.com</a> with the subject “Delete account”. We process within 30 days.</span></p>
+    </details>
+
+    <h2><span class="vi">Vẫn cần hỗ trợ?</span><span class="en">Still need help?</span></h2>
+    <p><span class="vi">Email: <a href="mailto:hutech.apps@gmail.com">hutech.apps@gmail.com</a>. Vui lòng kèm tên thiết bị, phiên bản app và mô tả ngắn gọn vấn đề (kèm ảnh chụp màn hình nếu có).</span><span class="en">Email: <a href="mailto:hutech.apps@gmail.com">hutech.apps@gmail.com</a>. Please include your device, app version and a short description (with a screenshot if possible).</span></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <small>© 2026 XAXI</small>
+    <div class="flinks">
+      <a href="index.html"><span class="vi">Trang chủ</span><span class="en">Home</span></a>
+      <a href="support.html"><span class="vi">Hỗ trợ</span><span class="en">Support</span></a>
+      <a href="privacy.html"><span class="vi">Chính sách bảo mật</span><span class="en">Privacy Policy</span></a>
+      <a href="terms.html"><span class="vi">Điều khoản</span><span class="en">Terms</span></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
