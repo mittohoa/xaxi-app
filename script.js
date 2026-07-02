@@ -32,3 +32,16 @@
     }
   });
 })();
+
+// Hiện version bản mới nhất từ GitHub Releases (tự cập nhật mỗi lần release).
+(function () {
+  try {
+    fetch('https://api.github.com/repos/mittohoa/xaxi-app/releases/latest')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        var el = document.getElementById('latest-ver');
+        if (el && d && d.tag_name) el.textContent = d.tag_name;
+      })
+      .catch(function () {});
+  } catch (e) {}
+})();
